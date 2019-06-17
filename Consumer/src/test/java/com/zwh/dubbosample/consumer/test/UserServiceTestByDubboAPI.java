@@ -4,7 +4,7 @@ import com.alibaba.dubbo.config.ApplicationConfig;
 import com.alibaba.dubbo.config.MonitorConfig;
 import com.alibaba.dubbo.config.ReferenceConfig;
 import com.alibaba.dubbo.config.RegistryConfig;
-import com.zwh.dubbosample.sdk.UserServiceBO;
+import com.zwh.sdk.UserServiceBO;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -14,7 +14,7 @@ import org.junit.Test;
  * @Author 张炜辉
  * @Date 2019/6/16
  */
-public class UserServiceTest2 {
+public class UserServiceTestByDubboAPI {
 
     private UserServiceBO userService;
 
@@ -42,7 +42,8 @@ public class UserServiceTest2 {
         reference.setVersion("1.0.0");
         reference.setGroup("dubbo");
         reference.setTimeout(3000);
-        reference.setInjvm(false);
+        //reference.setInjvm(false);
+        //reference.setScope("local");
         reference.setMonitor(monitorConfig);
 
         userService = reference.get();

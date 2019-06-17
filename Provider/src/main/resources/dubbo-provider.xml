@@ -25,6 +25,6 @@
     <bean id="userService" class="com.zwh.dubbosample.provider.service.UserServiceImpl" />
 
     <!-- 声明需要暴露的服务接口 -->
-    <dubbo:service interface="com.zwh.dubbosample.sdk.UserServiceBO" ref="userService" group="dubbo" version="1.0.0" timeout="3000"/>
+    <dubbo:service interface="com.zwh.sdk.UserServiceBO" ref="userService" group="dubbo" version="1.0.0" timeout="3000"/>
 
 </beans>

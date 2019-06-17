@@ -1,8 +1,8 @@
 package com.zwh.dubbosample.provider.service;
 
 import com.alibaba.fastjson.JSON;
-import com.zwh.dubbosample.sdk.Person;
-import com.zwh.dubbosample.sdk.UserServiceBO;
+import com.zwh.sdk.Person;
+import com.zwh.sdk.UserServiceBO;
 
 public class UserServiceImpl implements UserServiceBO {
 

@@ -2,7 +2,7 @@ package com.zwh.dubbosample.provider;
 
 import com.alibaba.dubbo.config.*;
 import com.zwh.dubbosample.provider.service.UserServiceImpl;
-import com.zwh.dubbosample.sdk.UserServiceBO;
+import com.zwh.sdk.UserServiceBO;
 
 /**
  * @Description 通过Dubbo API启动provider

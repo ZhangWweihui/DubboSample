@@ -1,6 +1,6 @@
 package com.zwh.dubbosample.provider.test;
 
-import com.zwh.dubbosample.sdk.UserServiceBO;
+import com.zwh.sdk.UserServiceBO;
 import org.junit.Assert;
 import org.junit.Test;
 import org.junit.runner.RunWith;
