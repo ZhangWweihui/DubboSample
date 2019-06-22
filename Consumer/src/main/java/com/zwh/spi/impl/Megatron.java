@@ -2,6 +2,7 @@ package com.zwh.spi.impl;
 
 import com.zwh.spi.Aircraft;
 import com.zwh.spi.Robot;
+import org.apache.dubbo.common.URL;
 
 /**
  * @author ZhangWeihui
@@ -9,19 +10,19 @@ import com.zwh.spi.Robot;
  */
 public class Megatron implements Robot {
 
-    private Aircraft warplane;
+    private Aircraft aircraft;
 
     public Aircraft getWarplane() {
-        return warplane;
+        return aircraft;
     }
 
-    public void setWarplane(Aircraft warplane) {
-        this.warplane = warplane;
+    public void setAircraft(Aircraft aircraft) {
+        this.aircraft = aircraft;
     }
 
     @Override
-    public void sayHello() {
+    public void sayHello(URL url) {
         System.out.println("Hello, I am Megatron.");
-        warplane.fly();
+        aircraft.fly(url);
     }
 }

@@ -1,5 +1,6 @@
 package com.zwh.spi;
 
+import org.apache.dubbo.common.URL;
 import org.apache.dubbo.common.extension.Adaptive;
 import org.apache.dubbo.common.extension.SPI;
 
@@ -10,6 +11,6 @@ import org.apache.dubbo.common.extension.SPI;
 @SPI
 public interface Aircraft {
 
-    @Adaptive
-    void fly();
+    @Adaptive({"aircraft"})
+    void fly(URL url);
 }

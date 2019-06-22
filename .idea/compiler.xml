@@ -6,9 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="Consumer" />
         <module name="consumer" />
         <module name="provider" />
+        <module name="Provider" />
         <module name="sdk" />
+        <module name="SDK" />
       </profile>
     </annotationProcessing>
   </component>
