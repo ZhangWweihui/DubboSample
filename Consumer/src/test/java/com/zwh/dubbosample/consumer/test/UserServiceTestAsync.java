@@ -1,10 +1,10 @@
 package com.zwh.dubbosample.consumer.test;
 
-import com.alibaba.dubbo.config.ApplicationConfig;
-import com.alibaba.dubbo.config.MonitorConfig;
-import com.alibaba.dubbo.config.ReferenceConfig;
-import com.alibaba.dubbo.config.RegistryConfig;
-import com.alibaba.dubbo.rpc.RpcContext;
+import org.apache.dubbo.config.ApplicationConfig;
+import org.apache.dubbo.config.MonitorConfig;
+import org.apache.dubbo.config.ReferenceConfig;
+import org.apache.dubbo.config.RegistryConfig;
+import org.apache.dubbo.rpc.RpcContext;
 import com.zwh.sdk.UserServiceBO;
 import org.junit.Assert;
 import org.junit.Before;

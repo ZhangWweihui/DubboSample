@@ -23,8 +23,10 @@
     <dubbo:monitor protocol="registry" />
 
     <bean id="userService" class="com.zwh.dubbosample.provider.service.UserServiceImpl" />
-
     <!-- 声明需要暴露的服务接口 -->
     <dubbo:service interface="com.zwh.sdk.UserServiceBO" ref="userService" group="dubbo" version="1.0.0" timeout="3000"/>
 
+    <bean id="networkService" class="com.zwh.dubbosample.provider.service.NetworkServiceImpl" />
+    <!-- 声明需要暴露的服务接口 -->
+    <dubbo:service interface="com.zwh.sdk.NetworkServiceBO" ref="networkService" group="dubbo" version="1.0.0" timeout="3000"/>
 </beans>
