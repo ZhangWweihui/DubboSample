@@ -12,6 +12,7 @@
         <module>Provider</module>
         <module>Consumer</module>
         <module>SDK</module>
+        <module>dubboannotation</module>
     </modules>
 
     <dependencies>
